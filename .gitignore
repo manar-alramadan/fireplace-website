@@ -1,14 +1,13 @@
 # IDE
 .idea/
-
-# Node
-node_modules/
-
-# Build
-dist/
+.vscode/
 
 # Environment
 .env
 
 # Logs
 *.log
+
+# OS files
+.DS_Store
+Thumbs.db
