@@ -5,7 +5,7 @@
 
     width: 100%;
 
-    background: rgba(17,17,17,0.9);
+    background: rgba(0,0,0,0.9);
 
     backdrop-filter: blur(10px);
 
@@ -35,9 +35,9 @@
 
     color: white;
 
-    font-size: 28px;
-
-    font-weight: 700;
+    font-size: 20px;
+  margin-left: 20px;
+    font-weight: 300;
 
 }
 
@@ -78,7 +78,7 @@
 }
 
 
-.navbar__button {
+.navbar__p {
 
     background:#d89b3c;
 
@@ -90,16 +90,17 @@
 
     border-radius:30px;
 
-    cursor:pointer;
+
 
     font-size:15px;
 
 }
 
 
-.navbar__button:hover {
+.navbar__p:hover {
 
     transform:translateY(-2px);
+
 
 }
 

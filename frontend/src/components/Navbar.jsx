@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-
+import icon_fireplace from "../assets/icon_fireplace.png";
 
 function Navbar() {
 
@@ -17,7 +17,9 @@ function Navbar() {
 
                 {/* Logo */}
                 <div className="navbar__logo">
-                    🔥 PlaceFire
+                    <img src={icon_fireplace} alt="fireplace" width="40" height="40" />
+
+
                 </div>
 
 
@@ -85,9 +87,9 @@ function Navbar() {
 
 
 
-                <button className="navbar__button">
-                    Request Design
-                </button>
+                <p className="navbar__p">
+                The Best Fireplace Website
+                </p>
 
 
             </div>
