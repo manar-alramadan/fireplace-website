@@ -17,7 +17,7 @@ function Navbar() {
 
                 {/* Logo */}
                 <div className="navbar__logo">
-                    <img src={icon_fireplace} alt="fireplace" width="35" height="35" />
+                    <img src={icon_fireplace} alt="fireplace" width="25" height="25" />
 
 
                 </div>

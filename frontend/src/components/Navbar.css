@@ -124,18 +124,18 @@
 
 @media(max-width:768px){
 
-
     .navbar__toggle{
 
         display:block;
-        margin-left: -50%;
-        margin-right: 4%;
-        background-color: #d89b3c;
-        border-radius: 30%;
+
+
 
     }
 
+   .navbar__logo{
 
+       display: none;
+   }
 
     .navbar__button{
 
