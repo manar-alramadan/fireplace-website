@@ -114,7 +114,7 @@
 
     color:white;
 
-    font-size:30px;
+    font-size:25px;
 
     cursor:pointer;
 
@@ -128,6 +128,10 @@
     .navbar__toggle{
 
         display:block;
+        margin-left: -50%;
+        margin-right: 4%;
+        background-color: #d89b3c;
+        border-radius: 30%;
 
     }
 

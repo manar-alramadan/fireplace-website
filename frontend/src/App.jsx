@@ -7,7 +7,7 @@ import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-
+import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -28,6 +28,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
 
             </Routes>
+            <Footer />
         </>
     );
 }
