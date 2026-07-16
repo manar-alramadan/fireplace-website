@@ -1,5 +1,27 @@
-function Home() {
-    return <h1>Home Page</h1>;
+import AboutHero from "../components/About/AboutHero";
+import AboutStory from "../components/About/AboutStory";
+import AboutValues from "../components/About/AboutValues";
+import "../components/About/About.css";
+import AboutStats from "../components/About/AboutStats";
+function About(){
+
+    return (
+
+        <>
+
+            <AboutHero />
+
+            <AboutStory />
+
+            <AboutValues />
+
+            <AboutStats />
+
+        </>
+
+    );
+
 }
 
-export default Home;
+
+export default About;
