@@ -1,0 +1,198 @@
+.gallery-header {
+
+    padding:80px 8% 40px;
+
+    text-align:center;
+
+}
+
+
+.gallery-header h1 {
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+    color:#222;
+
+}
+
+
+.gallery-header p {
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#666;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+}
+
+
+
+.gallery-filter{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:60px;
+}
+
+.gallery-filter button{
+
+    border:1px solid #d89b3c;
+    background:white;
+    color:#333;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:15px;
+
+}
+
+.gallery-filter button:hover{
+
+    background:#d89b3c;
+
+    color:white;
+
+}
+
+.gallery-filter .active{
+
+    background:#d89b3c;
+
+    color:white;
+
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    padding:0 8% 100px;
+}
+
+.gallery-card{
+    overflow:hidden;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    background:white;
+    transition:.3s;
+}
+
+.gallery-card:hover{
+    transform:translateY(-8px);
+}
+
+.gallery-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    display:block;
+}
+
+.gallery-info{
+    padding:20px;
+}
+
+.gallery-info h3{
+    margin-bottom:10px;
+}
+
+.gallery-info span{
+    color:#d89b3c;
+    font-weight:600;
+}
+
+@media(max-width:900px){
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+}
+.lightbox {
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,0.85);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:1000;
+
+}
+
+
+.lightbox img {
+
+    max-width:85%;
+
+    max-height:75%;
+
+    border-radius:15px;
+
+}
+
+
+.lightbox-close {
+
+    position:absolute;
+
+    top:30px;
+
+    right:40px;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:45px;
+
+    cursor:pointer;
+
+}
+
+
+.lightbox-info {
+
+    color:white;
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+
+.lightbox-info h2 {
+
+    margin-bottom:10px;
+
+}
