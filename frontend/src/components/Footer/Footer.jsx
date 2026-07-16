@@ -50,7 +50,7 @@ function Footer() {
                 <div className="footer-column">
                     <h3>Contact</h3>
 
-                    <p>�?️ Riyadh, Saudi Arabia</p>
+                    <p>🗺️ Riyadh, Saudi Arabia</p>
                     <a href="tel:0541595401">📞 0541595401</a>
                     <a href="https://www.instagram.com/qpt8.8?igsh=dTE0ZHhpYnc4cnc%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
                         📸 Instagram
