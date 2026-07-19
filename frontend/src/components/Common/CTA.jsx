@@ -1,4 +1,5 @@
 import "./CTA.css";
+import {NavLink} from "react-router-dom";
 
 function CTA() {
     return (
@@ -13,7 +14,10 @@ function CTA() {
 
                 </p>
 
-                <button>Request Your Design</button>
+                <button>
+                    <NavLink to="/design-request" style={{ textDecoration: 'none', color: 'white' }}>
+                        Request Your Design
+                    </NavLink></button>
 
             </div>
 

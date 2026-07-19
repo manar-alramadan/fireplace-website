@@ -1,3 +1,5 @@
+import {NavLink} from "react-router-dom";
+
 function Hero() {
 
     return (
@@ -18,8 +20,12 @@ function Hero() {
                 </p>
 
 
-                <button>
-                    Request Your Design
+                <button  >
+                    <NavLink
+                        to="/design-request"      style={{ textDecoration: 'none', color: 'white' }}
+                    >
+                        Request Design
+                    </NavLink>
                 </button>
 
             </div>

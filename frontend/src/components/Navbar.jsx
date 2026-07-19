@@ -87,9 +87,12 @@ function Navbar() {
 
 
 
-                <p className="navbar__p">
-                The Best Fireplace Website
-                </p>
+                <NavLink
+                    to="/design-request"
+                    className="navbar__button"
+                >
+                    Request Design
+                </NavLink>
 
 
             </div>
