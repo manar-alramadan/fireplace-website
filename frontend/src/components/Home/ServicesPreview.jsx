@@ -17,6 +17,23 @@ function ServicesPreview() {
             title: "Interior Decoration",
             description:
                 "Beautiful decoration ideas around your fireplace."
+        },
+        {
+            title: "Fireplace Design",
+            description:
+                "Custom fireplace designs created to match your home style."
+        },
+
+        {
+            title: "Fireplace Installation",
+            description:
+                "Professional installation with high quality materials."
+        },
+
+        {
+            title: "Interior Decoration",
+            description:
+                "Beautiful decoration ideas around your fireplace."
         }
     ];
 
