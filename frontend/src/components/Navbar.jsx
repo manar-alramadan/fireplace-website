@@ -81,7 +81,7 @@ function Navbar() {
                     >
                         Contact
                     </NavLink>
-
+                    <NavLink to="/blog">Blog</NavLink>
 
                 </nav>
 

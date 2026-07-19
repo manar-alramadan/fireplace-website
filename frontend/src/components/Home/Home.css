@@ -108,18 +108,17 @@ position: absolute;
 .services-container {
 
 
-    display:grid;
+    display:flex;
 
-    grid-template-columns:
-    repeat(3,1fr);
+
 
     gap:30px;
 
 
 
-    animation: scroll-right 6s linear infinite;
+    animation: scroll-right 15s linear infinite;
 
-
+width: max-content;
 }
 
 
@@ -144,12 +143,18 @@ position: absolute;
     display: inline-block;
     margin: 0 20px;
 
+
+
+
+flex-shrink: 0;
+    width:400px;
+
 }
 
 @keyframes scroll-right {
     from{
 
-        transform: translateX(-75%);
+        transform: translateX(-60%);
     }
 
     to{
