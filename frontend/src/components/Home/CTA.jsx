@@ -1,3 +1,5 @@
+import {NavLink} from "react-router-dom";
+
 function CTA() {
 
     return (
@@ -21,8 +23,13 @@ function CTA() {
                     We operate throughout the Kingdom of Saudi Arabia
                 </p>
 
-                <button>
+                <button>   <NavLink style={{ textDecoration: 'none', color: 'white' }}
+                    to="/design-request"
+
+                >
                     Request Your Design
+                </NavLink>
+
                 </button>
 
 
