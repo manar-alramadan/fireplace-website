@@ -4,7 +4,7 @@ import GalleryHeader from "../components/Gallery/GalleryHeader";
 import GalleryFilter from "../components/Gallery/GalleryFilter";
 import GalleryGrid from "../components/Gallery/GalleryGrid";
 import GalleryLightbox from "../components/Gallery/GalleryLightbox";
-
+import AdminButton from "../components/Gallery/AdminButton";
 import "../components/Gallery/Gallery.css";
 
 
@@ -29,7 +29,7 @@ function Gallery() {
 
             <GalleryHeader />
 
-
+            <AdminButton />
             <GalleryFilter
 
                 selectedCategory={selectedCategory}
