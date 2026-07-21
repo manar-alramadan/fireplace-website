@@ -1,15 +1,23 @@
+import useLanguage from "../../hooks/useLanguage";
+
 function GalleryHeader() {
+
+    const { t } = useLanguage();
+
     return (
+
         <section className="gallery-header">
 
-            <h1>Our Projects</h1>
+            <h1>
+                {t("gallery.header.title")}
+            </h1>
 
             <p>
-                Explore our collection of luxury fireplace designs
-                and completed projects.
+                {t("gallery.header.description")}
             </p>
 
         </section>
+
     );
 }
 

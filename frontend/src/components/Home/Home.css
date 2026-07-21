@@ -1,6 +1,9 @@
 
 
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 .hero {
 
@@ -89,7 +92,7 @@ position: absolute;
 .services-preview {
 
 
-    padding:80px 8%;
+    padding:30px 8%;
 
     text-align:center;
 
@@ -101,25 +104,16 @@ position: absolute;
 
     font-size:40px;
 
-    margin-bottom:50px;
+    margin-bottom:70px;
 
 }
 
 
 
 .services-container {
-
-
     display:flex;
-
-
-
     gap:30px;
-
-
-
-    animation: scroll-right 15s linear infinite;
-
+    animation: scroll-right 9s linear infinite;
 width: max-content;
 }
 
@@ -127,26 +121,13 @@ width: max-content;
 
 .service-card {
 
-
     padding:35px;
-
     background:#ffffff;
-
-    box-shadow:
-            0 10px 30px rgba(111,111,111,.1);
-
-
+    box-shadow: 0 10px 30px rgba(111,111,111,.1);
     border-radius:15px;
-
-
     transition:.3s;
-
-
     display: inline-block;
     margin: 0 20px;
-
-
-
 
 flex-shrink: 0;
     width:400px;
@@ -156,11 +137,11 @@ flex-shrink: 0;
 @keyframes scroll-right {
     from{
 
-        transform: translateX(-60%);
+        transform: translateX(-80%);
     }
 
     to{
-        transform: translateX(0);
+        transform: translateX(30);
 
 
     }
@@ -578,4 +559,17 @@ flex-shrink: 0;
     transform:translateY(-3px);
 
 
+}
+.cta-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #d4a24c;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
 }

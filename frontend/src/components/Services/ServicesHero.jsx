@@ -1,24 +1,33 @@
+
+
+import useLanguage from "../../hooks/useLanguage";
+
 function ServicesHero() {
+    const { t } = useLanguage();
+
     return (
         <section className="services-hero">
 
             <div className="services-overlay">
 
-        <span className="services-tag">
+       <span className="services-tag">
 
-        </span>
+</span>
 
                 <h1>
-                    Luxury Fireplace
-                    <br />
-                    Design & Installation
+                    {t("services.hero.title")
+                        .split("\n")
+                        .map((line, index) => (
+                            <span key={index}>
+                {line}
+                                <br />
+            </span>
+                        ))}
                 </h1>
 
                 <p>
-                    We create modern fireplaces that combine
-                    luxury, comfort and exceptional craftsmanship.
+                    {t("services.hero.description")}
                 </p>
-
             </div>
 
         </section>

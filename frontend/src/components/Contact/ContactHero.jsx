@@ -1,4 +1,8 @@
+import useLanguage from "../../hooks/useLanguage";
+
 function ContactHero() {
+
+    const { t } = useLanguage();
 
     return (
 
@@ -7,15 +11,12 @@ function ContactHero() {
             <div className="contact-hero-content">
 
                 <h1>
-                    Contact PlaceFire
+                    {t("contact.hero.title")}
                 </h1>
 
-
                 <p>
-                    Have a project in mind?
-                    Let's create your perfect fireplace design.
+                    {t("contact.hero.description")}
                 </p>
-
 
             </div>
 

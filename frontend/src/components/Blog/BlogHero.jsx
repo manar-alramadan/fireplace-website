@@ -1,15 +1,27 @@
+import useLanguage from "../../hooks/useLanguage";
+
 function BlogHero() {
+
+    const { t } = useLanguage();
+
     return (
+
         <section className="blog-hero">
+
             <div className="blog-hero-content">
-                <h1>Fireplace Design Blog</h1>
+
+                <h1>
+                    {t("blog.hero.title")}
+                </h1>
 
                 <p>
-                    Discover ideas, inspiration, and expert tips for designing beautiful
-                    fireplaces.
+                    {t("blog.hero.description")}
                 </p>
+
             </div>
+
         </section>
+
     );
 }
 

@@ -1,62 +1,60 @@
-const stats = [
-    {
-        number: "10+",
-        title: "Years Experience"
-    },
+import useLanguage from "../../hooks/useLanguage";
 
-    {
-        number: "100+",
-        title: "Completed Projects"
-    },
+function AboutStats() {
 
-    {
-        number: "50+",
-        title: "Happy Clients"
-    },
+    const { t } = useLanguage();
 
-    {
-        number: "20+",
-        title: "Design Styles"
-    }
-];
+    const stats = [
 
+        {
+            number: "10+",
+            key: "experience",
+        },
 
-function AboutStats(){
+        {
+            number: "100+",
+            key: "projects",
+        },
+
+        {
+            number: "50+",
+            key: "clients",
+        },
+
+        {
+            number: "20+",
+            key: "styles",
+        },
+
+    ];
 
     return (
 
         <section className="about-stats">
 
+            {stats.map((stat) => (
 
-            {
-                stats.map((stat)=>(
+                <div
+                    className="stat-card"
+                    key={stat.key}
+                >
 
-                    <div
-                        className="stat-card"
-                        key={stat.title}
-                    >
+                    <h2>
+                        {stat.number}
+                    </h2>
 
-                        <h2>
-                            {stat.number}
-                        </h2>
+                    <p>
+                        {t(`about.stats.${stat.key}`)}
+                    </p>
 
+                </div>
 
-                        <p>
-                            {stat.title}
-                        </p>
-
-
-                    </div>
-
-                ))
-            }
-
+            ))}
 
         </section>
 
     );
 
 }
-
 
 export default AboutStats;

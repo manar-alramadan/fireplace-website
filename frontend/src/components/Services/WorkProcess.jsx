@@ -1,55 +1,70 @@
-const steps = [
-    {
-        number: "1",
-        title: "Consultation",
-        description:
-            "We discuss your ideas, space, and project requirements.",
-    },
-    {
-        number: "2",
-        title: "Design",
-        description:
-            "Our designers prepare a custom fireplace concept for approval.",
-    },
-    {
-        number: "3",
-        title: "Installation",
-        description:
-            "Professional installation using premium materials and expert craftsmanship.",
-    },
-    {
-        number: "4",
-        title: "Final Delivery",
-        description:
-            "Quality inspection, finishing touches, and project handover.",
-    },
-];
+import useLanguage from "../../hooks/useLanguage";
 
 function WorkProcess() {
+
+    const { t } = useLanguage();
+
+    const steps = [
+
+        {
+            number: "1",
+            key: "consultation",
+        },
+
+        {
+            number: "2",
+            key: "design",
+        },
+
+        {
+            number: "3",
+            key: "installation",
+        },
+
+        {
+            number: "4",
+            key: "delivery",
+        },
+
+    ];
+
     return (
+
         <section className="work-process">
 
-            <h2>How We Work</h2>
+            <h2>
+                {t("services.process.title")}
+            </h2>
 
             <div className="process-grid">
 
                 {steps.map((step) => (
-                    <div key={step.number} className="process-card">
 
-            <span className="process-number">
-              {step.number}
-            </span>
+                    <div
+                        key={step.number}
+                        className="process-card"
+                    >
 
-                        <h3>{step.title}</h3>
+                        <span className="process-number">
+                            {step.number}
+                        </span>
 
-                        <p>{step.description}</p>
+                        <h3>
+                            {t(`services.process.steps.${step.key}.title`)}
+                        </h3>
+
+                        <p>
+                            {t(`services.process.steps.${step.key}.description`)}
+                        </p>
 
                     </div>
+
                 ))}
 
             </div>
 
         </section>
+
     );
 }
 

@@ -1,57 +1,52 @@
+import useLanguage from "../../hooks/useLanguage";
 import galleryData from "../../data/galleryData";
-
 
 function GalleryGrid({
                          selectedCategory,
                          onImageClick
                      }) {
 
+    const { t } = useLanguage();
 
     const filteredGallery =
         selectedCategory === "All"
             ? galleryData
             : galleryData.filter(
-                item =>
-                    item.category === selectedCategory
+                item => item.category === selectedCategory
             );
-
 
     return (
 
         <section className="gallery-grid">
 
+            {filteredGallery.map((item) => (
 
-            {
-                filteredGallery.map((item)=>(
+                <div
+                    className="gallery-card"
+                    key={item.id}
+                    onClick={() => onImageClick(item)}
+                >
 
-                    <div
-                        className="gallery-card"
-                        key={item.id}
-                        onClick={() => onImageClick(item)}
-                    >
+                    <img
+                        src={item.image}
+                        alt={t(`gallery.cards.${item.titleKey}`)}
+                    />
 
+                    <div className="gallery-info">
 
-                        <img
-                            src={item.image}
-                            alt={item.title}
-                        />
+                        <h3>
+                            {t(`gallery.cards.${item.titleKey}`)}
+                        </h3>
 
-
-                        <div className="gallery-info">
-
-                            <h3>{item.title}</h3>
-
-                            <span>{item.category}</span>
-
-                        </div>
-
+                        <span>
+                            {t(`gallery.filter.${item.category.toLowerCase().replace(" ", "")}`)}
+                        </span>
 
                     </div>
 
+                </div>
 
-                ))
-            }
-
+            ))}
 
         </section>
 

@@ -1,33 +1,28 @@
-function WhyChooseUs() {
 
+import useLanguage from "../../hooks/useLanguage";
+function WhyChooseUs() {
+    const { t } = useLanguage();
 
     const features = [
 
         {
-            title: "Custom Design",
-            description:
-                "Unique fireplace designs created especially for your home."
+            title: t("home.whyChooseUs.cards.design.title"),
+            description: t("home.whyChooseUs.cards.design.description")
         },
 
-
         {
-            title: "Premium Materials",
-            description:
-                "We use high quality stone, marble and modern materials."
+            title: t("home.whyChooseUs.cards.materials.title"),
+            description: t("home.whyChooseUs.cards.materials.description")
         },
 
-
         {
-            title: "Professional Team",
-            description:
-                "Experienced designers and installers delivering perfect results."
+            title: t("home.whyChooseUs.cards.team.title"),
+            description: t("home.whyChooseUs.cards.team.description")
         },
 
-
         {
-            title: "Quality Guarantee",
-            description:
-                "Attention to every detail with excellent finishing."
+            title: t("home.whyChooseUs.cards.quality.title"),
+            description: t("home.whyChooseUs.cards.quality.description")
         }
 
     ];
@@ -40,7 +35,7 @@ function WhyChooseUs() {
 
 
             <h2>
-                Why Choose PlaceFire?
+                {t("home.whyChooseUs.title")}
             </h2>
 
 

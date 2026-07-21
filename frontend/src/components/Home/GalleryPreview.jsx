@@ -1,8 +1,8 @@
-import fireplace1 from "../../assets/hero.png";
+import useLanguage from "../../hooks/useLanguage";
 
 
 function GalleryPreview() {
-
+    const { t } = useLanguage();
 
     const images = [
         "/images_gallery/1.jpg",
@@ -16,13 +16,14 @@ function GalleryPreview() {
 
     return (
 
-        <section className="gallery-preview">
+        <section className="gallery-preview"   >
 
 
             <h2>
-                Our Latest Projects
+                {t("home.galleryPreview.title")}
             </h2>
 
+            <h3    style={{ marginBottom: "30px" }}>{t("home.galleryPreview.subtitle")}</h3>
 
             <div className="gallery-grid">
 
@@ -50,7 +51,7 @@ function GalleryPreview() {
 
             <button className="gallery-button">
 
-                View Full Gallery
+                {t("home.galleryPreview.button")}
 
             </button>
 

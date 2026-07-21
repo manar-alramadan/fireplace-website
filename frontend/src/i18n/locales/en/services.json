@@ -1,0 +1,70 @@
+{
+  "hero": {
+
+    "title": "Luxury Fireplace\nDesign & Installation",
+    "description": "We create modern fireplaces that combine luxury, comfort and exceptional craftsmanship."
+  },
+  "grid": {
+    "title": "Our Services",
+    "subtitle": "Discover our premium fireplace solutions designed for comfort, elegance, and long-lasting quality.",
+    "button": "Choose",
+
+    "cards": {
+      "modern": {
+        "title": "Modern Fireplaces",
+        "description": "Elegant fireplace designs with a modern look for contemporary homes."
+      },
+
+      "marble": {
+        "title": "Marble Fireplaces",
+        "description": "Luxury marble fireplaces crafted with premium materials and finishes."
+      },
+
+      "outdoor": {
+        "title": "Outdoor Fireplaces",
+        "description": "Beautiful outdoor fireplaces for gardens, patios, and family gatherings."
+      },
+
+      "tvwall": {
+        "title": "TV Wall Designs",
+        "description": "Custom TV wall designs integrated with modern fireplaces."
+      },
+
+      "custom": {
+        "title": "Custom Design",
+        "description": "Personalized fireplace solutions designed specifically for your home."
+      },
+
+      "maintenance": {
+        "title": "Maintenance",
+        "description": "Professional maintenance and renovation services for existing fireplaces."
+      }
+    }
+  },
+  "process": {
+    "title": "How We Work",
+    "steps": {
+      "consultation": {
+        "title": "Consultation",
+        "description": "We discuss your ideas, space, and project requirements."
+      },
+      "design": {
+        "title": "Design",
+        "description": "Our designers prepare a custom fireplace concept for approval."
+      },
+      "installation": {
+        "title": "Installation",
+        "description": "Professional installation using premium materials and expert craftsmanship."
+      },
+      "delivery": {
+        "title": "Final Delivery",
+        "description": "Quality inspection, finishing touches, and project handover."
+      }
+    }
+  },
+  "cta": {
+    "title": "We Are Ready Whenever You Need Us",
+    "description": "Contact with us  today and let us design a luxury fireplace for your home.",
+    "button": "Request Your Design"
+  }
+}

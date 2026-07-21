@@ -1,0 +1,22 @@
+{
+  "header": {
+    "title": "Our Projects",
+    "description": "Explore our collection of luxury fireplace designs and completed projects."
+  },
+  "filter": {
+    "all": "All",
+    "modern": "Modern",
+    "marble": "Marble",
+    "stone": "Stone",
+    "outdoor": "Outdoor",
+    "tvwall": "TV Wall"
+  },
+  "cards": {
+    "modern1": "Modern Fireplace",
+    "modern2": "Luxury Living Room",
+    "marble1": "Marble Fireplace",
+    "stone1": "Natural Stone Fireplace",
+    "outdoor1": "Outdoor Fireplace",
+    "tvwall1": "TV Wall Fireplace"
+  }
+}

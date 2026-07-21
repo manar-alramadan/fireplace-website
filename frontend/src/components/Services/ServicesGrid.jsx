@@ -4,77 +4,97 @@ import w from "../../assets/w.jpg";
 import u from "../../assets/u.jpg";
 import j from "../../assets/j.jpg";
 import d from "../../assets/d.jpg";
-const services = [
-    {
-        title: "Modern Fireplaces",
-        description:
-            "Elegant fireplace designs with a modern look for contemporary homes.",
-        icon: j,
-    },
-    {
-        title: "Marble Fireplaces",
-        description:
-            "Luxury marble fireplaces crafted with premium materials and finishes.",
-        icon: m,
-    },
-    {
-        title: "Outdoor Fireplaces",
-        description:
-            "Beautiful outdoor fireplaces for gardens, patios, and family gatherings.",
-        icon: u,
-    },
-    {
-        title: "TV Wall Designs",
-        description:
-            "Custom TV wall designs integrated with modern fireplaces.",
-        icon:w,
-    },
-    {
-        title: "Custom Design",
-        description:
-            "Personalized fireplace solutions designed specifically for your home.",
-        icon: d,
-    },
-    {
-        title: "Maintenance",
-        description:
-            "Professional maintenance and renovation services for existing fireplaces.",
-        icon: ww,
-    },
-];
+import useLanguage from "../../hooks/useLanguage";
 
 function ServicesGrid() {
+
+    const { t } = useLanguage();
+
+    const services = [
+
+        {
+            key: "modern",
+            icon: j,
+        },
+
+        {
+            key: "marble",
+            icon: m,
+        },
+
+        {
+            key: "outdoor",
+            icon: u,
+        },
+
+        {
+            key: "tvwall",
+            icon: w,
+        },
+
+        {
+            key: "custom",
+            icon: d,
+        },
+
+        {
+            key: "maintenance",
+            icon: ww,
+        },
+
+    ];
+
     return (
+
         <section className="services-grid-section">
 
-            <h2>Our Services</h2>
+            <h2>
+                {t("services.grid.title")}
+            </h2>
 
             <p className="services-subtitle">
-                Discover our premium fireplace solutions designed for comfort,
-                elegance, and long-lasting quality.
+                {t("services.grid.subtitle")}
             </p>
 
             <div className="services-grid">
 
                 {services.map((service) => (
-                    <div className="service-card" key={service.title}>
 
-                        <div >
-                            <img src={service.icon} alt={service.title} className="service-icon" />
+                    <div
+                        className="service-card"
+                        key={service.key}
+                    >
+
+                        <div>
+
+                            <img
+                                src={service.icon}
+                                alt={t(`services.grid.cards.${service.key}.title`)}
+                                className="service-icon"
+                            />
+
                         </div>
 
-                        <h3>{service.title}</h3>
+                        <h3>
+                            {t(`services.grid.cards.${service.key}.title`)}
+                        </h3>
 
-                        <p>{service.description}</p>
+                        <p>
+                            {t(`services.grid.cards.${service.key}.description`)}
+                        </p>
 
-                        <button>Choose</button>
+                        <button>
+                            {t("services.grid.button")}
+                        </button>
 
                     </div>
+
                 ))}
 
             </div>
 
         </section>
+
     );
 }
 

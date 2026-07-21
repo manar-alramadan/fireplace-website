@@ -1,4 +1,9 @@
+import storyImage from "../../assets/u.jpg";
+import useLanguage from "../../hooks/useLanguage";
+
 function AboutStory() {
+
+    const { t } = useLanguage();
 
     return (
 
@@ -7,43 +12,32 @@ function AboutStory() {
             <div className="about-story-image">
 
                 <img
-                    src="/src/assets/u.jpg"
-                    alt="PlaceFire Project"
+                    src={storyImage}
+                    alt={t("about.story.imageAlt")}
                 />
 
             </div>
 
-
             <div className="about-story-content">
 
                 <h2>
-                    Our Story
+                    {t("about.story.title")}
                 </h2>
 
-
                 <p>
-                    At PlaceFire, we specialize in designing
-                    and building custom fireplaces that combine
-                    traditional craftsmanship with modern
-                    architecture.
+                    {t("about.story.paragraph1")}
                 </p>
 
-
                 <p>
-                    Our goal is to create elegant fireplace
-                    solutions that transform living spaces
-                    into warm and luxurious environments.
+                    {t("about.story.paragraph2")}
                 </p>
-
 
             </div>
-
 
         </section>
 
     );
 
 }
-
 
 export default AboutStory;

@@ -1,27 +1,43 @@
 import "./CTA.css";
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import useLanguage from "../../hooks/useLanguage";
 
 function CTA() {
+
+    const { t } = useLanguage();
+
     return (
+
         <section className="cta">
 
             <div className="cta-content">
 
-                <h2>we are ready anytime you want</h2>
+                <h2>
+                    {t("services.cta.title")}
+                </h2>
 
                 <p>
-                    Contact PlaceFire today and let us design a luxury fireplace
-
+                    {t("services.cta.description")}
                 </p>
 
                 <button>
-                    <NavLink to="/design-request" style={{ textDecoration: 'none', color: 'white' }}>
-                        Request Your Design
-                    </NavLink></button>
+
+                    <NavLink
+                        to="/design-request"
+                        style={{
+                            textDecoration: "none",
+                            color: "white"
+                        }}
+                    >
+                        {t("services.cta.button")}
+                    </NavLink>
+
+                </button>
 
             </div>
 
         </section>
+
     );
 }
 

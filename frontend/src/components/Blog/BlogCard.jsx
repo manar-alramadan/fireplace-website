@@ -1,24 +1,43 @@
-import {Link} from  "react-router-dom";
+import useLanguage from "../../hooks/useLanguage";
 
 function BlogCard({ article }) {
 
-
+    const { t } = useLanguage();
 
     return (
+
         <div className="blog-card">
-            <img src={article.image} alt={article.title} />
+
+            <img
+                src={article.image}
+                alt={t(`blog.${article.titleKey}`)}
+            />
 
             <div className="blog-card-content">
-                <h3>{article.title}</h3>
 
-                <p>{article.description}</p>
+                <h3>
+                    {t(`blog.${article.titleKey}`)}
+                </h3>
 
-              <Link to={`https://fireplacephotos.site123.me/%D8%A7%D9%84%D9%85%D9%82%D9%88%D8%A7%D9%84-%D8%A7%D8%A8%D9%88-%D8%A7%D9%8A%D8%A7%D8%AF-%D8%AC%D9%88%D8%A7%D9%84-0566572444`} className="read-more">
-                    Read More
-                </Link>
+                <p>
+                    {t(`blog.${article.descriptionKey}`)}
+                </p>
+
+                <a
+                    href={article.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="read-more"
+                >
+                    {t("blog.card.readMore")}
+                </a>
+
             </div>
+
         </div>
+
     );
+
 }
 
 export default BlogCard;
