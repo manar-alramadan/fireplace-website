@@ -4,7 +4,15 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm config set registry https://registry.npmjs.org/
+
+RUN npm config set fetch-retries 10
+RUN npm config set fetch-retry-factor 2
+RUN npm config set fetch-retry-mintimeout 30000
+RUN npm config set fetch-retry-maxtimeout 300000
+RUN npm config set fetch-timeout 600000
+
+RUN npm ci
 
 COPY . .
 
