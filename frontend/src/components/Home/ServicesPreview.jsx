@@ -1,40 +1,25 @@
+import useLanguage from "../../hooks/useLanguage";
+
 function ServicesPreview() {
-
+    const { t } = useLanguage();
     const services = [
+
         {
-            title: "Fireplace Design",
-            description:
-                "Custom fireplace designs created to match your home style."
+            title: t("home.servicesPreview.cards.design.title"),
+            description: t("home.servicesPreview.cards.design.description")
         },
 
         {
-            title: "Fireplace Installation",
-            description:
-                "Professional installation with high quality materials."
+            title: t("home.servicesPreview.cards.installation.title"),
+            description: t("home.servicesPreview.cards.installation.description")
         },
 
         {
-            title: "Interior Decoration",
-            description:
-                "Beautiful decoration ideas around your fireplace."
-        },
-        {
-            title: "Fireplace Design",
-            description:
-                "Custom fireplace designs created to match your home style."
-        },
-
-        {
-            title: "Fireplace Installation",
-            description:
-                "Professional installation with high quality materials."
-        },
-
-        {
-            title: "Interior Decoration",
-            description:
-                "Beautiful decoration ideas around your fireplace."
+            title: t("home.servicesPreview.cards.decoration.title"),
+            description: t("home.servicesPreview.cards.decoration.description")
         }
+
+
     ];
 
 
@@ -43,9 +28,7 @@ function ServicesPreview() {
         <section className="services-preview">
 
 
-            <h2>
-                Our Services
-            </h2>
+            <h1>{t("home.servicesPreview.title")}</h1>
 
 
             <div className="services-container">

@@ -140,6 +140,7 @@ text-decoration: none;
 
 
 
+
     .navbar__menu{
 
 
@@ -176,5 +177,69 @@ text-decoration: none;
     }
 
 
+
+}
+.language-switcher{
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+
+}
+
+
+
+.language-switcher button{
+
+    border:none;
+
+    background:#111;
+
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.language-switcher button:hover{
+
+    opacity:.8;
+
+}
+html[dir="rtl"] .navbar{
+
+    direction:rtl;
+
+}
+html[dir="rtl"] .navbar-links{
+
+    flex-direction:row-reverse;
+
+}
+html[dir="rtl"] .hero-buttons{
+
+    flex-direction:row-reverse;
+
+}
+.active-language{
+
+    background:#d4a24c;
+
+    color:white;
+
+}
+html[dir="rtl"] .services{
+
+    direction:rtl;
 
 }

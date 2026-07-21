@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "Contact with Us",
+    "description": "Have a project in mind? Let's create your perfect fireplace design."
+  },
+  "info": {
+    "location": {
+      "title": "Location",
+      "value": "Riyadh, Saudi Arabia"
+    },
+    "phone": {
+      "title": "Phone"
+    },
+    "whatsapp": {
+      "title": "WhatsApp"
+    },
+    "instagram": {
+      "title": "Instagram"
+    },
+    "hours": {
+      "title": "Working Hours",
+      "value": "Every day | 9:00 AM - 6:00 PM"
+    }
+  }
+}

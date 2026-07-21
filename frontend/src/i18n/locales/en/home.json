@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "title": "Luxury Fireplace Designs",
+    "subtitle": "Modern indoor and outdoor fireplaces designed with premium materials and exceptional craftsmanship.",
+    "button": "Explore Our Projects"
+  },
+
+  "servicesPreview": {
+    "title": "Our Services",
+
+    "cards": {
+      "design": {
+        "title": "Fireplace Design",
+        "description": "Custom fireplace designs created to match your home style."
+      },
+
+      "installation": {
+        "title": "Fireplace Installation",
+        "description": "Professional installation with high quality materials."
+      },
+
+      "decoration": {
+        "title": "Interior Decoration",
+        "description": "Beautiful decoration ideas around your fireplace."
+      }
+    }
+  },
+  "galleryPreview": {
+    "title": "Our Latest Projects",
+    "subtitle": "Explore a selection of our completed fireplace projects.",
+    "button": "View Gallery"
+  },
+  "whyChooseUs": {
+    "title": "Why Choose PlaceFire?",
+    "cards": {
+      "design": {
+        "title": "Custom Design",
+        "description": "Unique fireplace designs created especially for your home."
+      },
+      "materials": {
+        "title": "Premium Materials",
+        "description": "We use high quality stone, marble and modern materials."
+      },
+      "team": {
+        "title": "Professional Team",
+        "description": "Experienced designers and installers delivering perfect results."
+      },
+      "quality": {
+        "title": "Quality Guarantee",
+        "description": "Attention to every detail with excellent finishing."
+      }
+    }
+  },
+
+  "cta": {
+  "title": "Ready To Build Your Dream Fireplace?",
+  "description": "Contact us today and get a custom fireplace design for your home.",
+  "location": "We operate throughout the Kingdom of Saudi Arabia",
+  "button": "Request Your Design"
+}
+
+}

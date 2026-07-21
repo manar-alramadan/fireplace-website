@@ -1,0 +1,26 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "gallery": "Gallery",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "request": "Request Design"
+  },
+  "footer": {
+    "description": "Luxury fireplace design and installation for modern homes.",
+    "quickLinks": "Quick Links",
+    "servicesTitle": "Services",
+    "contact": "Contact",
+    "location": "Riyadh, Saudi Arabia",
+    "rights": "All Rights Reserved.",
+    "services": {
+      "modern": "Modern Fireplaces",
+      "outdoor": "Outdoor Fireplaces",
+      "marble": "Marble Fireplaces",
+      "gypsum": "Gypsum Fireplaces",
+      "custom": "Custom Designs"
+    }
+  }
+}

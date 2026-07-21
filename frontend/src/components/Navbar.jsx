@@ -2,8 +2,19 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import icon_fireplace from "../assets/icon_fireplace.png";
+import useLanguage from "../hooks/useLanguage";
 
 function Navbar() {
+    const {
+
+        t,
+
+        isArabic,
+
+        changeLanguage
+
+    } = useLanguage();
+
 
     const [open, setOpen] = useState(false);
 
@@ -47,7 +58,7 @@ function Navbar() {
                         to="/"
                         onClick={() => setOpen(false)}
                     >
-                        Home
+                        {t("navbar.home")}
                     </NavLink>
 
 
@@ -55,7 +66,7 @@ function Navbar() {
                         to="/services"
                         onClick={() => setOpen(false)}
                     >
-                        Services
+                        {t("navbar.services")}
                     </NavLink>
 
 
@@ -63,7 +74,7 @@ function Navbar() {
                         to="/gallery"
                         onClick={() => setOpen(false)}
                     >
-                        Gallery
+                        {t("navbar.gallery")}
                     </NavLink>
 
 
@@ -71,7 +82,7 @@ function Navbar() {
                         to="/about"
                         onClick={() => setOpen(false)}
                     >
-                        About
+                        {t("navbar.about")}
                     </NavLink>
 
 
@@ -79,9 +90,11 @@ function Navbar() {
                         to="/contact"
                         onClick={() => setOpen(false)}
                     >
-                        Contact
+                        {t("navbar.contact")}
                     </NavLink>
-                    <NavLink to="/blog">Blog</NavLink>
+                    <NavLink to="/blog">
+                        {t("navbar.blog")}
+                    </NavLink>
 
                 </nav>
 
@@ -91,12 +104,26 @@ function Navbar() {
                     to="/design-request"
                     className="navbar__button"
                 >
-                    Request Design
+                    {t("navbar.request")}
                 </NavLink>
+<div className="language-switcher">
+                <button
+                    className={!isArabic ? "active-language" : ""}
+                    onClick={() => changeLanguage("en")}
+                >
+                    EN
+                </button>
+
+                <button
+                    className={isArabic ? "active-language" : ""}
+                    onClick={() => changeLanguage("ar")}
+                >
+                    AR
+                </button>
 
 
             </div>
-
+            </div>
         </header>
 
     );

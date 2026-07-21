@@ -1,7 +1,7 @@
 import {NavLink} from "react-router-dom";
-
+import useLanguage from "../../hooks/useLanguage";
 function CTA() {
-
+    const { t } = useLanguage();
     return (
 
         <section className="cta-section">
@@ -11,26 +11,21 @@ function CTA() {
 
 
                 <h2>
-                    Ready To Build Your Dream Fireplace?
+                    {t("home.cta.title")}
                 </h2>
 
 
                 <p>
-                    Contact us today and get a custom
-                    fireplace design for your home.
+                    {t("home.cta.description")}
+
                 </p>
                 <p>
-                    We operate throughout the Kingdom of Saudi Arabia
+                    {t("home.cta.location")}
                 </p>
 
-                <button>   <NavLink style={{ textDecoration: 'none', color: 'white' }}
-                    to="/design-request"
-
-                >
-                    Request Your Design
+                <NavLink className="cta-button" to="/design-request">
+                    {t("home.cta.button")}
                 </NavLink>
-
-                </button>
 
 
             </div>

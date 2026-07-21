@@ -1,83 +1,105 @@
+import useLanguage from "../../hooks/useLanguage";
 
-const contactInfo = [
-    {
-        icon: "🌏",
-        title: "Location",
-        value: "Riyadh, Saudi Arabia"
-    },
+function ContactInfo() {
 
-    {
-        icon: "📞",
-        title: "Phone",
-        value: "0 54 159 5401",
-        link: "tel:+966541595401" // يفتح تطبيق الاتصال بالرقم مباشرة
-    },
+    const { t } = useLanguage();
 
-    {
-        icon: "📲",
-        title: "WhatsApp",
-        value: "+966 54 159 5401",
-        link: "https://wa.me/966541595401" // الرابط المباشر للمحادثة
-    },
+    const contactInfo = [
 
-    {
-        icon: "📸",
-        title: "instagram",
-        value: "contact with us",
-        link: "https://www.instagram.com/qpt8.8?igsh=dTE0ZHhpYnc4cnc%3D&utm_source=qr" // الرابط المباشر للمحادثة
-    },
+        {
+            key: "location",
+            icon: "🌏",
+            value: "Riyadh, Saudi Arabia"
+        },
 
-    {
-        icon: "🕒",
-        title: "Working Hours",
-        value: "every day | 9:00 AM - 6:00 PM"
-    }
-];
+        {
+            key: "phone",
+            icon: "📞",
+            value: "054 159 5401",
+            link: "tel:+966541595401"
+        },
 
+        {
+            key: "whatsapp",
+            icon: "📲",
+            value: "+966 54 159 5401",
+            link: "https://wa.me/966541595401"
+        },
 
-function ContactInfo(){
+        {
+            key: "instagram",
+            icon: "📸",
+            value: "www.instagram.com",
+            link: "https://www.instagram.com/qpt8.8?igsh=dTE0ZHhpYnc4cnc%3D&utm_source=qr"
+        },
+
+        {
+            key: "hours",
+            icon: "🕒",
+            value: "9:00 AM - 6:00 PM"
+        }
+
+    ];
 
     return (
 
         <section className="contact-info">
 
+            {contactInfo.map((item) => {
 
-            {
-                contactInfo.map((item)=>(
-<a href={item.link}   style={{ textDecoration: "none" ,color: "blue" }}  >
+                const card = (
 
-
-                    <div
-                        className="contact-card"
-                        key={item.title}
-                    >
+                    <div className="contact-card">
 
                         <div className="contact-icon">
                             {item.icon}
                         </div>
 
-
                         <h3>
-                            {item.title}
+                            {t(`contact.info.${item.key}.title`)}
                         </h3>
 
-
                         <p>
-                            {item.value}
+                            {item.key === "location"
+                                ? t("contact.info.location.value")
+                                : item.key === "hours"
+                                    ? t("contact.info.hours.value")
+                                    : item.value}
                         </p>
 
-
                     </div>
-                   </a>
-                ))
-            }
 
+                );
+
+                return item.link ? (
+
+                    <a
+                        key={item.key}
+                        href={item.link}
+                        target={item.link.startsWith("http") ? "_blank" : undefined}
+                        rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined}
+                        style={{
+                            textDecoration: "none",
+                            color: "inherit"
+                        }}
+                    >
+                        {card}
+                    </a>
+
+                ) : (
+
+                    <div key={item.key}>
+                        {card}
+                    </div>
+
+                );
+
+            })}
 
         </section>
 
     );
 
 }
-
 
 export default ContactInfo;

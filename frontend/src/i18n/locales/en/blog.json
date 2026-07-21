@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "Fireplace Design Blog",
+    "description": "Discover ideas, inspiration, and expert tips for designing beautiful fireplaces."
+  },
+
+  "card": {
+    "readMore": "Read More"
+  },
+
+  "article1": {
+    "title": "Modern Fireplace Design Ideas",
+    "description": "Discover elegant fireplace designs that complement modern homes."
+  },
+
+  "article2": {
+    "title": "Choosing the Right Stone Fireplace",
+    "description": "Learn how to select the perfect natural stone for your fireplace."
+  },
+
+  "article3": {
+    "title": "Outdoor Fireplace Inspiration",
+    "description": "Create a warm and inviting outdoor living space with stylish fireplaces."
+  }
+}

@@ -1,4 +1,8 @@
+import useLanguage from "../../hooks/useLanguage";
+
 function AboutHero() {
+
+    const { t } = useLanguage();
 
     return (
 
@@ -7,16 +11,12 @@ function AboutHero() {
             <div className="about-hero-content">
 
                 <h1>
-                    About PlaceFire
+                    {t("about.hero.title")}
                 </h1>
 
-
                 <p>
-                    We design and build luxury fireplaces
-                    that bring warmth and elegance
-                    to modern spaces.
+                    {t("about.hero.description")}
                 </p>
-
 
             </div>
 
@@ -24,6 +24,5 @@ function AboutHero() {
 
     );
 }
-
 
 export default AboutHero;

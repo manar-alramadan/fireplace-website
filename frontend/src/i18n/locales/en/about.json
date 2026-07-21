@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "title": "About PlaceFire",
+    "description": "We design and build luxury fireplaces that bring warmth and elegance to modern spaces."
+  },
+  "story": {
+    "title": "Our Story",
+    "imageAlt": "PlaceFire Project",
+    "paragraph1": "At PlaceFire, we specialize in designing and building custom fireplaces that combine traditional craftsmanship with modern architecture.",
+    "paragraph2": "Our goal is to create elegant fireplace solutions that transform living spaces into warm and luxurious environments."
+  },
+  "values": {
+    "title": "Our Values",
+    "subtitle": "The principles that guide our work and help us create exceptional designs.",
+    "cards": {
+      "quality": {
+        "title": "Quality",
+        "description": "We use premium materials and professional execution to deliver high quality fireplaces."
+      },
+      "custom": {
+        "title": "Custom Design",
+        "description": "Every fireplace is designed according to customer needs and interior style."
+      },
+      "experience": {
+        "title": "Experience",
+        "description": "Creative solutions based on expertise in modern and traditional fireplace designs."
+      }
+    }
+  },
+  "stats": {
+    "experience": "Years Experience",
+    "projects": "Completed Projects",
+    "clients": "Happy Clients",
+    "styles": "Design Styles"
+  }
+}

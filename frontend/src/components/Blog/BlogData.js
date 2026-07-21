@@ -1,25 +1,29 @@
+import ok3 from "../../assets/ok3.jpg";
+import ok7 from "../../assets/ok7.jpg";
+import ok9 from "../../assets/ok9.jpg";
+
 const blogData = [
     {
         id: 1,
-        title: "Modern Fireplace Design Ideas",
-        description:
-            "Discover elegant fireplace designs that complement modern homes.",
-        image: "/src/assets/ok3.jpg",
+        titleKey: "article1.title",
+        descriptionKey: "article1.description",
+        image: ok3,
+        url: "https://fireplacephotos.site123.me/%D8%A7%D9%84%D9%85%D9%82%D9%88%D8%A7%D9%84-%D8%A7%D8%A8%D9%88-%D8%A7%D9%8A%D8%A7%D8%AF-%D8%AC%D9%88%D8%A7%D9%84-0566572444"
     },
     {
         id: 2,
-        title: "Choosing the Right Stone Fireplace",
-        description:
-            "Learn how to select the perfect natural stone for your fireplace.",
-        image: "/src/assets/ok7.jpg",
+        titleKey: "article2.title",
+        descriptionKey: "article2.description",
+        image: ok7,
+        url: "https://fireplacephotos.site123.me/%D8%A7%D9%84%D9%85%D9%82%D9%88%D8%A7%D9%84-%D8%A7%D8%A8%D9%88-%D8%A7%D9%8A%D8%A7%D8%AF-%D8%AC%D9%88%D8%A7%D9%84-0566572444"
     },
     {
         id: 3,
-        title: "Outdoor Fireplace Inspiration",
-        description:
-            "Create a warm and inviting outdoor living space with stylish fireplaces.",
-        image: "/src/assets/ok9.jpg",
-    },
+        titleKey: "article3.title",
+        descriptionKey: "article3.description",
+        image: ok9,
+        url: "https://fireplacephotos.site123.me/%D8%A7%D9%84%D9%85%D9%82%D9%88%D8%A7%D9%84-%D8%A7%D8%A8%D9%88-%D8%A7%D9%8A%D8%A7%D8%AF-%D8%AC%D9%88%D8%A7%D9%84-0566572444"
+    }
 ];
 
 export default blogData;

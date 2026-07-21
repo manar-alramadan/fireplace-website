@@ -1,30 +1,28 @@
 import {NavLink} from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
+
+
 
 function Hero() {
-
+    const { t } = useTranslation();
     return (
 
         <section className="hero">
 
             <div className="hero__content">
 
-                <h1>
-                    Modern Fireplaces
-                    Designed For Your Home
-                </h1>
+                <h1>{t("home.hero.title")}</h1>
 
 
-                <p>
-                    We design and build luxury fireplaces
-                    that transform your living space.
-                </p>
+                <p>{t("home.hero.subtitle")}</p>
 
 
                 <button  >
                     <NavLink
                         to="/design-request"      style={{ textDecoration: 'none', color: 'white' }}
                     >
-                        Request Design
+                        {t("home.hero.button")}
                     </NavLink>
                 </button>
 
