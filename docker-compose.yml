@@ -1,0 +1,61 @@
+services:
+
+  mongodb:
+    image: mongo:latest
+
+    container_name: placefire-mongodb
+
+    ports:
+      - "27017:27017"
+
+    volumes:
+      - mongodb_data:/data/db
+
+
+
+  backend:
+
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+
+    container_name: placefire-backend
+
+    ports:
+      - "5000:5000"
+
+
+    environment:
+      PORT: 5000
+      NODE_ENV: development
+      MONGODB_URI: mongodb://mongodb:27017/placefire
+      JWT_SECRET: placefire_secret_key_123
+
+
+    depends_on:
+      - mongodb
+
+
+
+  frontend:
+
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+
+
+    container_name: placefire-frontend
+
+
+    ports:
+      - "5173:80"
+
+
+    depends_on:
+      - backend
+
+
+
+volumes:
+
+  mongodb_data:
