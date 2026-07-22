@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 
 const connectDB = require("./config/db");
 const adminRoutes = require("./routes/adminRoutes");
-
+const galleryRoutes = require("./routes/galleryRoutes");
 
 dotenv.config();
 
@@ -23,7 +23,7 @@ app.use(express.json());
 // Admin API
 app.use("/api/admin", adminRoutes);
 
-
+app.use("/api/gallery", galleryRoutes);
 
 app.get("/", (req,res)=>{
     res.json({
