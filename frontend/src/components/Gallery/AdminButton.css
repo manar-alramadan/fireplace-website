@@ -1,0 +1,22 @@
+.admin-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.admin-button {
+    align-self: flex-start;
+ margin-top: -230px;
+    background: #1f2937;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.admin-button:hover {
+    background: #374151;
+}
